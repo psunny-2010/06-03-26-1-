@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06-03(1)</title>
+    <style>
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          }
+          body{
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          #formsection{
+            width: 550px;
+            height: fit-content;
+            padding: 20px;
+            background-color: rgb(245, 243, 243);
+            border-radius: 12px;
+          }
+          .container{
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            border-radius: 12px;
+            padding: 40px;
+          }
+          .heading{
+            font-size: 30px;
+            font-weight: 650;
+            letter-spacing: 1;
+            margin-bottom: 10px;
+            color: rgb(31, 31, 31);
+          }
+          .description{
+            font-size: 15px;
+            margin-bottom: 28px;
+            font-weight: 400;
+            color:rgb(48, 46, 46) ;
+          }
+          .course{
+            width: 100%;
+            height: 75px;
+            background-color: rgb(246, 246, 246);
+            border-radius: 4px;
+            border-left: 3.5px rgb(232, 168, 47) solid;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+            padding:0 0 0 15px;
+            margin-bottom: 28px;
+          }
+          .course span{
+            font-size: 15px;
+            font-weight:700 ;
+            color: black;
+            margin-bottom: 5px;
+          }
+          .course p{
+             font-weight:500 ;
+               font-size: 14px;
+            color:rgb(48, 46, 46) ;
+          }
+          .form{
+            display: flex;
+            flex-direction: column;
+          }
+          .lable{
+            font-size:14px;
+            font-weight: 500;
+            color: rgb(69, 69, 69);
+            margin-bottom: 6px;
+          }
+          input{
+            height: 50px;
+            margin-bottom: 20px;
+             border-radius: 6px;
+            border: solid 2px rgb(187, 187, 187);
+            padding-left: 15px;
+            outline: none;
+          }
+           select{
+            height: 50px;
+         margin-bottom:30px;
+         border: 2px solid black;
+         border-radius: 6px;
+        padding-left: 15px;
+           font-size: 16px;
+          }
+          option{
+           height: 30px;
+           width: 100%;
+          }
+          input::placeholder,select::placeholder{
+            font-size: 16px;
+            letter-spacing: 1.5;
+          }
+           button{
+            height: 50px;
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            transition: all linear .3s;
+            border: none;
+            border-radius: 6px;
+
+          }
+          button:hover{
+             font-size: 19px;
+            background-color: rgb(109, 109, 109);
+            color: black;
+          }
+    </style>
+</head>
+<body>
+    <section id="formsection">
+        <div class="container">
+            <h1 class="heading">Enroll in Course</h1>
+            <p class="description">Join the best instructors and start learning today</p>
+            <div class="course">
+                <span>Course: Learn UI Design with Figma</span>
+                <p>Instructor:Daniele Buffa</p>
+            </div>
+            <div class="form">
+                <span class="lable">FULL NAME</span>
+                <input type="text" placeholder="Enter Your full name">
+                <span class="lable">EMAIL ADDRESS</span>
+                <input type="email" name="" id=""placeholder="name@example.com">
+                <span class="lable">SELECT EXPERIENCE LEVEL</span>
+                <select name="" id="">
+                    <option value="Beginner" selected>Beginner</option>
+                     <option value="Beginner">Intermediate</option>
+                      <option value="Beginner">Advanced</option>
+                       <option value="Beginner">Expert</option>
+                </select>
+                <button type="submit">Proceed to Payment <span>&#8594;</span></button>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
